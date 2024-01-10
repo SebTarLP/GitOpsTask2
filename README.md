@@ -40,6 +40,13 @@ At this point we should have the action workflow executed correctly:
 
 ![image](https://github.com/SebTarLP/GitOpsTask2/assets/156203191/fcb7087e-063a-48a9-ac83-77f03c348713)
 
+The content of the deployment.yaml file should change where the image name for the container is located along with the tag:
+
+![image](https://github.com/SebTarLP/GitOpsTask2/assets/156203191/e05ff383-a6b8-452a-8bcf-23000553e2a2)
+
+Also, different versions of the image should be visible in DockerHub:
+
+![image](https://github.com/SebTarLP/GitOpsTask2/assets/156203191/8074463c-9795-48fa-bbd3-0cc5614cb88a)
 
 Next step is to create Dockerfile in main repository:
 1. Create Dockerfile -> Using latest alpine image. Image should have access to git, curl and kubectl commands.
