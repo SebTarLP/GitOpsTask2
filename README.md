@@ -36,5 +36,7 @@ Next step is to build and push image:
 
 Next step is to create CronJob object:
 1. Create operator.yaml file -> Has to run every two minutes. It should copy contents of the ConfigRepo to /temp dir initializing the application update process.
+2. For the cronjob to work it is necessary to define a ServiceAccoun object and ClusterRoleBinding object in order to gran permission to change cluster resources.
+3. Last step is to run the cronjob from the operator.yaml configuration file.
 
 
