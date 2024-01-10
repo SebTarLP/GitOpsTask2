@@ -41,7 +41,9 @@ Next step is to create Dockerfile in main repository:
 
 Next step is to build and push image:
 1. Building image -> https://docs.docker.com/engine/reference/commandline/build/
-2. Pushing image -> https://docs.docker.com/engine/reference/commandline/push/
+   - docker build -t "USERNAME/IMAGE_NAME:TAG"
+3. Pushing image -> https://docs.docker.com/engine/reference/commandline/push/
+   - docker push "USERNAME/IMAGE_NAME:TAG"
 
 Next step is to create CronJob object:
 1. Create operator.yaml file -> Has to run every two minutes. It should copy contents of the ConfigRepo to /temp dir initializing the application update process.
