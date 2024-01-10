@@ -4,10 +4,15 @@ Steps to follow before starting the task:
 1. Configure GitHub CLI -> https://docs.github.com/en/github-cli/github-cli/quickstart
    - sudo apt update (for Ubuntu)
    - sudo apt install gh (for Ubuntu)
-   - sudo auth login
+   - sudo auth login (verbose, user will be asked for account, protocol, etc.)
 3. Create Access Token on GitHub (access to: project, repo, workflow)-> https://docs.github.com/en/enterprise-server@3.9/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token
 5. Add secret with Access Token to repository -> https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository
-6. Create repositories. Repositories can be created via GitHub CLI -> https://cli.github.com/manual/gh_repo_create
+   - gh secret set "SECRET_NAME" (verbose, user will be asked to enter value for a secret)
+7. Create repositories. Repositories can be created via GitHub CLI -> https://cli.github.com/manual/gh_repo_create
+   - git init -b "BRANCH
+   - git add .
+   - git commit -m "COMMENT"
+   - gh repo create (verbose, user will be asked about what to do with repository)
 
 Two repositories are needed to perform the task:
 
@@ -29,6 +34,7 @@ Next step is to configure access to DockerHub:
 
 Next step is to run GitHub Actions:
 1. It can be done via GitHub CLI -> https://cli.github.com/manual/gh_workflow_run or manually from GitHub GUI -> https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow
+   - gh workflow run "WORKFLOW_NAME"
 
 Next step is to create Dockerfile in main repository:
 1. Create Dockerfile -> Using latest alpine image. Image should have access to git, curl and kubectl commands.
