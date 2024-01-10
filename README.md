@@ -36,6 +36,11 @@ Next step is to run GitHub Actions:
 1. It can be done via GitHub CLI -> https://cli.github.com/manual/gh_workflow_run or manually from GitHub GUI -> https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow
    - gh workflow run "WORKFLOW_NAME"
 
+At this point we should have the action workflow executed correctly:
+
+![image](https://github.com/SebTarLP/GitOpsTask2/assets/156203191/fcb7087e-063a-48a9-ac83-77f03c348713)
+
+
 Next step is to create Dockerfile in main repository:
 1. Create Dockerfile -> Using latest alpine image. Image should have access to git, curl and kubectl commands.
 
