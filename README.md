@@ -2,9 +2,9 @@
 
 Steps to follow before starting the task:
 1. Configure GitHub CLI -> https://docs.github.com/en/github-cli/github-cli/quickstart
-2. Create Access Token on GitHub (access to: project, repo, workflow)-> https://docs.github.com/en/enterprise-server@3.9/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token
-3. Add secret with Access Token to repository -> https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository
-4. Create repositories. Repositories can be created via GitHub CLI -> https://cli.github.com/manual/gh_repo_create
+3. Create Access Token on GitHub (access to: project, repo, workflow)-> https://docs.github.com/en/enterprise-server@3.9/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token
+4. Add secret with Access Token to repository -> https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository
+5. Create repositories. Repositories can be created via GitHub CLI -> https://cli.github.com/manual/gh_repo_create
 
 Two repositories are needed to perform the task:
 
@@ -26,3 +26,15 @@ Next step is to configure access to DockerHub:
 
 Next step is to run GitHub Actions:
 1. It can be done via GitHub CLI -> https://cli.github.com/manual/gh_workflow_run or manually from GitHub GUI -> https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow
+
+Next step is to create Dockerfile in main repository:
+1. Create Dockerfile -> Using latest alpine image. Image should have access to git, curl and kubectl commands.
+
+Next step is to build and push image:
+1. Building image -> https://docs.docker.com/engine/reference/commandline/build/
+2. Pushing image -> https://docs.docker.com/engine/reference/commandline/push/
+
+Next step is to create CronJob object:
+1. Create operator.yaml file -> Has to run every two minutes. It should copy contents of the ConfigRepo to /temp dir initializing the application update process.
+
+
