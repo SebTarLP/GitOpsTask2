@@ -2,9 +2,12 @@
 
 Steps to follow before starting the task:
 1. Configure GitHub CLI -> https://docs.github.com/en/github-cli/github-cli/quickstart
+   - sudo apt update (for Ubuntu)
+   - sudo apt install gh (for Ubuntu)
+   - sudo auth login
 3. Create Access Token on GitHub (access to: project, repo, workflow)-> https://docs.github.com/en/enterprise-server@3.9/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token
-4. Add secret with Access Token to repository -> https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository
-5. Create repositories. Repositories can be created via GitHub CLI -> https://cli.github.com/manual/gh_repo_create
+5. Add secret with Access Token to repository -> https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository
+6. Create repositories. Repositories can be created via GitHub CLI -> https://cli.github.com/manual/gh_repo_create
 
 Two repositories are needed to perform the task:
 
