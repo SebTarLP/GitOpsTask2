@@ -60,6 +60,20 @@ Next step is to build and push image:
 Next step is to create CronJob object:
 1. Create operator.yaml file -> Has to run every two minutes. It should copy contents of the ConfigRepo to /temp dir initializing the application update process.
 2. For the cronjob to work it is necessary to define a ServiceAccoun object and ClusterRoleBinding object in order to gran permission to change cluster resources.
-3. Last step is to run the cronjob from the operator.yaml configuration file.
+   - kubectl create sa gitops
+   - kubectl create clusterrolebinding gitops-admin --clusterrole=cluster-admin --serviceaccount default:gitops
+4. Last step is to run the cronjob from the operator.yaml configuration file.
 
+At this point we should have the image placed in DockerHub:
+
+![image](https://github.com/SebTarLP/GitOpsTask2/assets/156203191/dc5b78cd-8c99-43eb-b6f0-9083d6b68bc9)
+
+Next step is to make webapplication available at http://zad2.lab:
+1. First, map the ip address of the minikube cluster to the given name in /etc/hosts file.
+   - "CLUSTER_IP" "NAME"
+2. Setup minikube tunnel to forward ip address.
+   - minikube tunnel
+3. Open a browser and type "http://zad2.lab" into the url search bar.
+
+At this point we should have our index.html file content shown in browser:
 
