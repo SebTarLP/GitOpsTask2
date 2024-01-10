@@ -85,6 +85,7 @@ Last step is to test if our CI/CD chain works:
 3. Rerun workflow - change tag.
 
 Changing tag in workflow in GitHub GUI:
+
 ![image](https://github.com/SebTarLP/GitOpsTask2/assets/156203191/5e1b349b-055b-4799-9e97-d61f17877774)
 
 Changing tag in workflow in GitHub CLI:
