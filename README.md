@@ -78,3 +78,11 @@ Next step is to make webapplication available at http://zad2.lab:
 At this point we should have our index.html file content shown in browser:
 
 ![image](https://github.com/SebTarLP/GitOpsTask2/assets/156203191/a0720984-4078-428e-b4f4-41215dd9ef65)
+
+Last step is to test if our CI/CD chain works:
+1. Change index.html file content. Change version 1.1 -> 2.1.
+2. Commit and push.
+3. Rerun workflow - change tag.
+
+Changing tag in workflow:
+
