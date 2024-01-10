@@ -25,4 +25,4 @@ Next step is to configure access to DockerHub:
 2. Add secrets with DockerHub Username and Access Token to repository -> https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository
 
 Next step is to run GitHub Actions:
-1. 
+1. It can be done via GitHub CLI -> https://cli.github.com/manual/gh_workflow_run or manually from GitHub GUI -> https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow
