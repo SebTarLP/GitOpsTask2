@@ -84,5 +84,17 @@ Last step is to test if our CI/CD chain works:
 2. Commit and push.
 3. Rerun workflow - change tag.
 
-Changing tag in workflow:
+Changing tag in workflow in GitHub GUI:
+![image](https://github.com/SebTarLP/GitOpsTask2/assets/156203191/5e1b349b-055b-4799-9e97-d61f17877774)
+
+Changing tag in workflow in GitHub CLI:
+   - gh workflow run "WORKFLOW_NAME" -f tag=2.1
+
+New image version in DockerHub:
+
+![image](https://github.com/SebTarLP/GitOpsTask2/assets/156203191/70684593-8bfb-4a78-bf7d-565bf6b6a463)
+
+New website content:
+
+![image](https://github.com/SebTarLP/GitOpsTask2/assets/156203191/46411723-dd21-49be-9d9d-2d49feff4f06)
 
