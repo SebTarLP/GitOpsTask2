@@ -77,3 +77,4 @@ Next step is to make webapplication available at http://zad2.lab:
 
 At this point we should have our index.html file content shown in browser:
 
+![image](https://github.com/SebTarLP/GitOpsTask2/assets/156203191/a0720984-4078-428e-b4f4-41215dd9ef65)
