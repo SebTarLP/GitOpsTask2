@@ -6,7 +6,7 @@ Steps to follow before starting the task:
    - sudo apt install gh (for Ubuntu)
    - sudo auth login (verbose, user will be asked for account, protocol, etc.)
 3. Create Access Token on GitHub (access to: project, repo, workflow)-> https://docs.github.com/en/enterprise-server@3.9/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token
-5. Add secret with Access Token to repository -> https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository
+5. Add secret with Access Token to repository -> https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository or by CLI -> https://cli.github.com/manual/gh_secret_set
    - gh secret set "SECRET_NAME" (verbose, user will be asked to enter value for a secret)
 7. Create repositories. Repositories can be created via GitHub CLI -> https://cli.github.com/manual/gh_repo_create
    - git init -b "BRANCH
@@ -30,7 +30,8 @@ Next step is to crate files in repositories:
 
 Next step is to configure access to DockerHub:
 1. Create Access Token on DockerHub -> https://docs.docker.com/security/for-developers/access-tokens/#create-an-access-token
-2. Add secrets with DockerHub Username and Access Token to repository -> https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository
+2. Add secrets with DockerHub Username and Access Token to repository -> https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository or by CLI -> https://cli.github.com/manual/gh_secret_set
+   - gh secret set "SECRET NAME" (verbose, user will be asked to enter value for a secret)
 
 Next step is to run GitHub Actions:
 1. It can be done via GitHub CLI -> https://cli.github.com/manual/gh_workflow_run or manually from GitHub GUI -> https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow
