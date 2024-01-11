@@ -18,3 +18,4 @@ spec:
               command: [sh, -e, -c]
               args:
                 - git clone https://github.com/SebTarLP/ConfigRepo.git /tmp/ConfigRepoB && find /tmp/ConfigRepoB -name "*.yaml" -exec kubectl apply -f {} \;
+    
